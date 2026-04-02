@@ -2,3 +2,16 @@
 #Period 6
 #Week 11
 #Time Spent: 
+class Book:
+  def __init__(self, title):
+  self.available = True
+  def checkout(self):
+    if self.available:
+      self.available = False
+      print(self.title, "was checked out")
+    else:
+      print(self.title, "is alreaxcdy checked out")
+  def return_b(self):
+    self.available = True
+    print(self.title, "has been returned to the libary")
+
