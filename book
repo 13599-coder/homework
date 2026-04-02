@@ -6,3 +6,6 @@ from week 11 import Book
 book1 = Book("If I ever get out of here")
 book2 = Book("Harry Potter")
 book1.checkout()
+book1.checkout()
+book1.return_book()
+book2.checkout()
