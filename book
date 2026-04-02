@@ -2,4 +2,7 @@
 #Period 6
 #Week 11
 #Time Spent:
-from 
+from week 11 import Book
+book1 = Book("If I ever get out of here")
+book2 = Book("Harry Potter")
+book1.checkout()
