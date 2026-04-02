@@ -4,7 +4,8 @@
 #Time Spent: 
 class Book:
   def __init__(self, title):
-  self.available = True
+    self.title - title
+    self.available = True
   def checkout(self):
     if self.available:
       self.available = False
