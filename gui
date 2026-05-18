@@ -15,13 +15,15 @@ class MyGUI:
     fruits = ['Banna', 'Mango', 'Plums', 'Cherrys', 'Broccoil']
     for thing in fruits:
       self.listbox.insert(tkinter.END, thing)
-      self.listbox.bind('ListboxSelectSection', self.show_item)
+
+    self.listbox.bind('<<ListboxSelectSection>>', self.show_item)
+
     self.quit_button = tkinter.Button(self.main_window, text = "QUIT", command = self.main_window.destroy)
     self.quit_button.pack()
     tkinter.mainloop()
   def show_item(self, event):
     indexes = self.listbox.curselection()
-    if len(inexes) > 0:
+    if len(indexes) > 0:
       selected_item = self.listbox.get(indexes[0])
       message = "YOu picked " + selected_item
       self.value.set(selected_item)
