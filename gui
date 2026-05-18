@@ -1,4 +1,6 @@
 import tkinter, tkinter.messagebox
 class MyGUI:
   def __init__(self):
-    self.main_window
+    self.main_window = tkinter.Tk()
+    #the entry 
+    self.entry = tkinter.Entry(self.main_window, width=20)
