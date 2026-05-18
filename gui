@@ -1,1 +1,4 @@
-
+import tkinter, tkinter.messagebox
+class MyGUI:
+  def __init__(self):
+    self.main_window
