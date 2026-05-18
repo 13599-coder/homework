@@ -4,3 +4,9 @@ class MyGUI:
     self.main_window = tkinter.Tk()
     #the entry 
     self.entry = tkinter.Entry(self.main_window, width=20)
+
+    self.entry.pack()
+    #the output label
+    self.value = tkinter.StringVar()
+    
+    
