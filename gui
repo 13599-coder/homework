@@ -8,5 +8,7 @@ class MyGUI:
     self.entry.pack()
     #the output label
     self.value = tkinter.StringVar()
-    
+    self.output_label_here = tkinter.Label(self.main_window, textvariable = self.value)
+    self.output_label_here.pack()
+    self.listbox = tkinter.Listbox(self.main_window, height = 5, width = 15)
     
