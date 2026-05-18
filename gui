@@ -11,4 +11,8 @@ class MyGUI:
     self.output_label_here = tkinter.Label(self.main_window, textvariable = self.value)
     self.output_label_here.pack()
     self.listbox = tkinter.Listbox(self.main_window, height = 5, width = 15)
+    self.listbox.pack()
+    fruits = ['Banna', 'Mango', 'Plums', 'Cherrys', 'Broccoil']
+    for thing in fruits:
+      self.listbox.insert(tkinter.END, thing)
     
